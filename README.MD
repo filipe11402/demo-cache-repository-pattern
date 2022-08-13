@@ -128,10 +128,10 @@ var isFromCache = carFromCache.dataSource == "Cache";
 
 ## References
 
-- Repository pattern
+- Pattern inspirations
 
   - [Steve Ardalis CachedRepository Pattern](https://ardalis.com/introducing-the-cachedrepository-pattern/)
   -  [Bruno Brito](https://www.youtube.com/watch?v=vC444683wHs)
 
-- Documentation
+- Documentation inspiration
   - [Nelson Nobre](https://github.com/NelsonBN)
