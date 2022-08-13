@@ -101,6 +101,31 @@ interface CarRepository : ICarRepository
 }
 ```
 
+### List cars
+
+```cs
+var carListFromDatasource = await carRepository.ListAsync();
+var carListFromCache = await carRepository.ListAsync();
+
+//true
+var isFromDatabase = carListFromDataSource.dataSource == "Database";
+
+//true
+var isFromCache = carListFromCache.dataSource == "Cache";
+```
+
+### Get Car by Id
+```cs
+var carFromDatasource = await carRepository.GetByIdAsync(1);
+var carFromCache = await carRepository.GetByIdAsync(1);
+
+//true
+var isFromDatabase = carFromDatasource.dataSource == "Database";
+
+//true
+var isFromCache = carFromCache.dataSource == "Cache";
+```
+
 ## References
 
 - Repository pattern
