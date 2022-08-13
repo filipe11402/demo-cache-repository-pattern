@@ -35,7 +35,7 @@ namespace DemoCachedRepository.API.Repositories
 
                 if (dbCar is null)
                 {
-                    return Task.FromResult<(string, Car)>((null, null));
+                    return Task.FromResult<(string, Car)>(default);
                 }
 
                 _cache.Set(cacheKey, dbCar);
