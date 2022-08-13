@@ -86,7 +86,6 @@ interface CarRepository : ICarRepository
             //search for the car on the datasource
             if (dbCar is null)
             {
-                
                 //otherwise return null;
                 return Task.FromResult<(string, Car)>(default);
             }
